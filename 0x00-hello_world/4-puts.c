@@ -2,7 +2,7 @@
 
 	/**
 	 * main: entry point
-	 *
+	 * Description: Prints out string enterd using puts command
 	 * Return: always 0 (success)
 	*/
 
