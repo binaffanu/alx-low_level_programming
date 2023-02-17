@@ -1,11 +1,9 @@
-#include <stdio.h>
-
+#include<stdio.h>
 /**
- * Main - entry point
- * Description: prit out string using pritf
- * Return: will return 0 (success)
-*/
-
+ * main - Entry point
+ *
+ * Return: Always 0 (Success)
+ */
 	int main(void)
 	{
 		printf("%s", "with proper grammar, but the outcome is a piece of art,\n");
