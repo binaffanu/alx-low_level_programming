@@ -1,7 +1,7 @@
 #include <stdio.h>
 
 /**
- *main: entry point
+ * Main - entry point
  * Description: prit out string using pritf
  * Return: will return 0 (success)
 */
