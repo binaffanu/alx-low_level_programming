@@ -1,14 +1,13 @@
 #include <stdio.h>
-
-	/**
-	 * main - entry point
-	 * description - Prints out string enterd using puts command
-	 * Return: always 0 (success)
-	*/
+/**
+ * main - Entry point
+ * description - Prints out string enterd using puts command
+ * Return: always 0 (success)
+*/
 
 	int main(void)
 	{
-		puts("\"Programming is like building a multilingual puzzle");
+		puts("Programming is like building a multilingual puzzle\n");
 		return (0);
 
 	}
