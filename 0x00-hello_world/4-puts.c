@@ -6,7 +6,7 @@
 	 * Return: always 0 (success)
 	*/
 
-	int main(void)
+	int main(void)//executes all the codes in main
 	{
 		puts("\"Programming is like building a multilingual puzzle");
 		return (0);
