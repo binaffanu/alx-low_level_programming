@@ -23,6 +23,6 @@ int main(void)
 		putchar(upperCase);
 		upperCase++;
 	}
-		pitchar('\n')
+		putchar('\n')
 	return (0);
 }
