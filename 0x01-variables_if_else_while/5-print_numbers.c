@@ -14,9 +14,9 @@ int main(void)
 
 	while (y < 10)
 	{
-		printf("$d");
+		printf("$d", y);
 		y++;
 	}
-        putchar('\n');
+	putchar('\n');
 return (0);
 }
