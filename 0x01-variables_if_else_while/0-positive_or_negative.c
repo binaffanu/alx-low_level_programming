@@ -2,9 +2,12 @@
 #include <time.h>
 #include <stdio.h>
 /* more headers goes there */
-/* main - main content goes here!*/
 /* betty style doc for function main goes there */
-/*Description: Describe how to generate random numbers*/
+/**
+ * main - main content goes here!
+ *Description: Describe how to generate random numbers
+ * Return: always 0 (Success)
+*/
 int main(void)
 {
 	int n;
