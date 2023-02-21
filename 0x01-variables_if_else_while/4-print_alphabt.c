@@ -10,10 +10,10 @@
 
 int main(void)
 {
-        char a = 'a';
+	char a = 'a';
 	while (a <= 'z')
 	{
-		if (a != 'q' && 'e')
+		if (a != 'q' && a != 'e')
 		{
 			putchar(a);
 		}
