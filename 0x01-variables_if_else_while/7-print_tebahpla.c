@@ -8,12 +8,13 @@
  */
 int main(void)
 {
-	int i = 50;
+	char z = 'z';
+	char caps = 'Z';
 
-	while (i < 100)
+	while (z <= 'z' && caps <= 'Z')
 	{
-		putchar(i);
-		i--;
+		putchar(z);
+		z--;
 	}
 	putchar(10);
 
