@@ -1,45 +1,43 @@
 #include"main.h"
 /**
- * print_to_98 - prints natural numbers from n to 98, followed by a new line.
+ * print_times_table - function that prints the n times table, starting with 0.
  *
  * @n: input number
- *
- * Return: output
  */
-
 void print_times_table(int n)
 {
 	int x = 0;
-	int a, b;
+	int y;
+	int z;
 
-	if (n > 15 || n <0)
+	if (n > 15 || n < 0)
 		return;
-	while (n <= x)
+	while (x <= n)
 	{
-		for(a = 0; a <= 15; a++)
+		for (y = 0; y <= n; y++)
 		{
-			b = a * x;
-			if (b < 99)
+			z = x * y;
+			if (z > 99)
 			{
-				_putchar(b / 100 + '0');
-				_putchar((b / 10 % 10) + '0');
-				_putchar(b % 10 + '0');
+				_putchar(z / 100 + '0');
+				_putchar((z / 10 % 10) + '0');
+				_putchar(z % 10 + '0');
 			}
-			else if (b > 9)
+			else if (z > 9)
 			{
 				_putchar(' ');
-				_putchar(b / 10 + '0');
-				_putchar(b % 10 + '0');
+				_putchar(z / 10 + '0');
+				_putchar(z % 10 + '0');
 			}
-			else if (a != 0)
+			else if (y != 0)
 			{
 				_putchar(' ');
 				_putchar(' ');
-				_putchar(b + '0');
+				_putchar(z + '0');
 			}
 			else
-				_putchar(b + '0');
-			if (b != n)
+				_putchar(z + '0');
+			if (y != n)
 			{
 				_putchar(',');
 				_putchar(' ');
@@ -47,6 +45,6 @@ void print_times_table(int n)
 		}
 		_putchar('\n');
 		x++;
-				
 	}
 }
+
