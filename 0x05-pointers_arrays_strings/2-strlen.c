@@ -12,7 +12,7 @@ int _strlen(char *s)
 {
 	int length = 0;
 
-	if (length != '\0')
+	if (length != 0)
 	{
 		length++;
 		s++;
