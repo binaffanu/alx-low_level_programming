@@ -2,7 +2,7 @@
 /**
  * *_strcat: String to concatenate
  * @src: source string will be appended to @dest
- * @dest: string appended to
+ * @dest: string appended to it
  * Return: pinter return the string
 */
 char *_strcat(char *dest, char *src)
