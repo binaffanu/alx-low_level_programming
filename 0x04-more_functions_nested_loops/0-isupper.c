@@ -2,8 +2,9 @@
 #include <stdio.h>
 
 /**
- * main - check the code.
- *
+ * _isupper - parameter c to check for upper
+ *@c: int character
+ *Description: check if it is upper
  * Return: Always 0.
  */
 int _isupper(int c)
