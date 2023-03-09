@@ -7,6 +7,7 @@
  */
 void _puts_recursion(char *s)
 {
-	puts(s);
-	return (s);
+	_putchar(*s);
+	putsfrecursion(s + 1);
+	_putchar("\n");
 }
