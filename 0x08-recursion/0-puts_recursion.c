@@ -1,17 +1,18 @@
-#include"main.h"
-
-/**
- *_puts - puts the string
- * _recursion - function to print string
- * Return: on success return s
- */
-void _puts_recursion(char *s)
-{
-	if (char *s; *s != \0)
-	{
-		_putchar(*s);
-		putsfrecursion(s + 1);
-	}
-	_putchar("\n");
-
-}
+#include "main.h" 
+  
+ /** 
+  * _puts_recursion - fxn that prints a string, followed by a new line. 
+  * @s: string 
+  */ 
+ void _puts_recursion(char *s) 
+ { 
+         if (*s) 
+         { 
+                 _putchar(*s); 
+                 _puts_recursion(s + 1); 
+         } 
+         else 
+         { 
+                 _putchar('\n'); 
+         } 
+ }
