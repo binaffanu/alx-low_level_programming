@@ -1,20 +1,17 @@
 #include "main.h"
-#include <stdio.h>
 
 /**
- * _isdigit - parameter c to check for upper
- *@c: int character
- *Description: check if it is upper
- * Return: Always 0.
- */
+  * _isdigit - Check for digit numbers
+  * @c: Number to be checked
+  *
+  * Return: 1 if c is a digit, 0 otherwise
+  */
 int _isdigit(int c)
 {
-        if (c >= '0' && c <= '9')
-        {
-                return (1);
-        }
-                else
-        {
-                return (0);
-        }
+	if (c >= 48 && c <= 57)
+	{
+		return (1);
+	}
+
+	return (0);
 }
