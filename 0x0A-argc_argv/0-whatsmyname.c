@@ -4,9 +4,9 @@ int main(int argc, char *argv[])
 {
 	int i;
 	
-	if(i = 0; i > 0; i++)
+	for (i = 0; i < argc; i++)
 	{
-		printf("%d", argv[i]);
-		return (0);
+		printf("%s\n", argv[i]);
 	}
+	return (0);
 }
