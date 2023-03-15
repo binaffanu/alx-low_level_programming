@@ -8,15 +8,13 @@
  */
 int main(int argc, char *argv[])
 {
-	int i, sum = 0;
+	int i, j, sum = 0;
 
 	if (argc > 1)
 	{
-		for (i = 1; i < argc; i++)
-		{
-			printf("argv[%d] = %s\n", i, argv[i]);
-			sum += atoi(argv[i]);
-		}
+		i = atoi(argv[1]);
+		j = atoi(argv[2]);
+		sum = i + j;
 		printf("total %d\n", sum);
 	}
 	return (0);
