@@ -10,16 +10,15 @@
 int main(int argc, char *argv[])
 {
 
-	int i, prod = 0;
+	int i, x, prod = 0;
 	
-	if (argc > 1)
+	if (argc == 3)
 	{
-		for (i = 1; i < argc; i++)
-		{	
-			printf("argv[%d] = %s\n", i, argv[i]);
-			prod *= atoi(argv[i]);
-        	}
-		printf("total = %d\n", prod);
+		x = atoi(argv[1]);
+		i = atoi(argv[2]);
+		prod = x * i;
+
+		printf("%d\n", prod);
 	}
-	return (1);
+	return (0);
 }
