@@ -1,25 +1,40 @@
 #include <stdio.h>
 #include <stdlib.h>
+#include <ctype.h>
+
 /**
- * main - add argumentsof argv
- * @argc: argument to print command
- * @argv: argument vector to print array
- * Return: always 0 on success
+ * main - entry point - func that adds positive numbers
+ * @argc: number of arguments passed to the function
+ * @argv: argument vector of pointers to strings
+ *
+ * Return: 0 if no errors, else 1
  */
+
 int main(int argc, char *argv[])
 {
-	int i, j, sum = 0;
 
-	if (argc > 1)
+	int sum = 0, i, j;
+
+	for (i = 1; i < argc; i++)
 	{
-		for (i = 1; i < argc; i++)
+		for (j = 0; argv[i][j]; j++)
 		{
-			for (j = 1; j < argc; j++)
-			i = atoi(argv[1]);
-			j = atoi(argv[2]);
-			sum = i + j;
+			if (isdigit(argv[i][j]) == 0)
+			{
+				printf("Error\n");
+				return (1);
+			}
 		}
-		printf("total %d\n", sum);
+
 	}
+
+	for (i = 1; i < argc; i++)
+	{
+
+		sum += atoi(argv[i]);
+	}
+
+	printf("%d\n", sum);
 	return (0);
+
 }
