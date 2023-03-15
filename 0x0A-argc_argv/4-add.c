@@ -12,9 +12,13 @@ int main(int argc, char *argv[])
 
 	if (argc > 1)
 	{
-		i = atoi(argv[1]);
-		j = atoi(argv[2]);
-		sum = i + j;
+		for (i = 1; i < argc; i++)
+		{
+			for (j = 1; j < argc; j++)
+			i = atoi(argv[1]);
+			j = atoi(argv[2]);
+			sum = i + j;
+		}
 		printf("total %d\n", sum);
 	}
 	return (0);
