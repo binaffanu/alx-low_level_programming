@@ -1,23 +1,23 @@
-#include <stdio.h>
+#include<stdlib.h>
+#include<stdio.h>
 /**
- * main - print its name followed by new line
- * @argc: size of the program
- * @argv: string pointer array to the program
- * Return: always return 0 on success
- */
+  * main - program that multiplies two numbers.
+  * @argc: argument sizw
+  * @argv: argument string pointer
+  *
+  * Return: Always zero
+  */
 int main(int argc, char *argv[])
 {
+	int a, b;
 
-        int i, sum = 0;
-
-	if (argc > 1)
+	if (argc == 3)
 	{
-		for (i = 1; i < argc; i++)
-		{	
-        		printf("argv[%d] = %s\n", i, argv[i]);
-			sum += atoi(argv[i]);
-        	}
-		printf("total = %d", sum);
+		a = atoi(argv[1]);
+		b = atoi(argv[2]);
+		printf("%d\n", a * b);
+		return (0);
 	}
-        return (0);
+	printf("Error\n");
+	return (1);
 }
